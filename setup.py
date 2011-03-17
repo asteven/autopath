@@ -1,13 +1,16 @@
 from distutils.core import setup
 
 from autopath import __version__
+
+name = 'autopath'
+
 setup(
-    name=autopath.__name__,
+    name=name,
     version=__version__,
     author='Steven Armstrong',
-    author_email='steven-%s@armstrong.cc' % autopath.__name__,
-    url='http://github.com/ungleich/%s/' % autopath.__name__,
+    author_email='steven-%s@armstrong.cc' % name,
+    url='http://github.com/ungleich/%s/' % name,
     description='Simple PYTHONPATH handling',
-    py_modules=[autopath.__name__],
+    py_modules=[name],
 )
 
